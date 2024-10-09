@@ -14,3 +14,16 @@ button.addEventListener('click', () => {
   bgEl.style.backgroundColor = color;
   h2El.innerText = color
 });
+// JavaScript to change the background color of the box
+document.getElementById('colorBtn').addEventListener('click', function() {
+  const box = document.getElementById('box');
+  
+  // Array of colors
+  const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightgoldenrodyellow', 'lightpink'];
+  
+  // Pick a random color
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  
+  // Set the new background color
+  box.style.backgroundColor = randomColor;
+});
